@@ -18,3 +18,8 @@ Computations[computation1]=$result1
 Computations[computation2]=$result2
 Computations[computation3]=$result3
 Computations[computation4]=$result4
+
+for (( i=1; i<=4; i++ ))
+do
+	resultsOfComputations[$i]=${Computations[computation$i]}
+done
