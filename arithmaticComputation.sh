@@ -54,7 +54,7 @@ function sortInDescending(){
 	for (( i=1; i<=4; i++ ))
 	do
 		echo ${resultsOfComputations[$i]}
-	done | sort -nr
+	done | sort $1
 }
 
 #Perform arithmatic computation
@@ -63,7 +63,9 @@ function arithmaticComputations(){
 	storeResultsInDictionary
 	storeResultsIntoArray
 	echo "Results in Descending order:"
-	sortInDescending
+	sortInDescending -nr
+	echo "Results in Ascending order:"
+	sortInDescending -n
 }
 
 #Main
