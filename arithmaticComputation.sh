@@ -7,3 +7,4 @@ read -p "Enter the value of b: " b
 read -p "Enter the value of c: " c
 
 result1=`awk "BEGIN {print $a + $b * $c}"`
+result2=`awk "BEGIN {print $a * $b + $c}"`
